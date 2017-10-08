@@ -12,6 +12,7 @@ import {
   View,
   Image
 } from 'react-native';
+import Pupper from './pupper.js'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -22,9 +23,6 @@ const instructions = Platform.select({
 
 export default class App extends Component<{}> {
   render() {
-    let doggo = {
-      uri: 'https://i.imgur.com/x9Qznbz.jpg'
-    };
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
@@ -39,7 +37,7 @@ export default class App extends Component<{}> {
         <Text style={styles.instructions}>
           Hello World!
         </Text>
-        <Image source={doggo} style={{width: 300, height: 300}}/>
+        <Pupper />
       </View>
     );
   }
