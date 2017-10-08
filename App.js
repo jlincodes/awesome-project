@@ -9,7 +9,8 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  Image
 } from 'react-native';
 
 const instructions = Platform.select({
@@ -21,6 +22,9 @@ const instructions = Platform.select({
 
 export default class App extends Component<{}> {
   render() {
+    let doggo = {
+      uri: 'https://i.imgur.com/x9Qznbz.jpg'
+    };
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
@@ -33,8 +37,9 @@ export default class App extends Component<{}> {
           {instructions}
         </Text>
         <Text style={styles.instructions}>
-          Hello!
+          Hello World!
         </Text>
+        <Image source={doggo} style={{width: 300, height: 300}}/>
       </View>
     );
   }
