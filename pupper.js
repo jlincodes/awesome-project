@@ -7,7 +7,7 @@ export default class Pupper extends Component {
       uri: 'https://i.imgur.com/x9Qznbz.jpg'
     };
     return (
-      <Image source={pupper} style={{width: 300, height: 300}}/>
+      <Image source={pupper} style={{width: 150, height: 150}}/>
     );
   }
 }
